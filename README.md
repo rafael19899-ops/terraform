@@ -129,6 +129,11 @@ Authors
 License
 This project is licensed under the License Name - see the LICENSE.md file for details.
 
+Principle files to use as Azure Pipeline Factory Create:
+https://github.com/rafael19899-ops/terraform/blob/main/azure-pipelines.yml - min.tf file
+https://github.com/rafael19899-ops/terraform/blob/main/azure-pipelines-1.yml - Variables.tf
+https://github.com/rafael19899-ops/terraform/blob/main/azure-pipelines-2.yml - Variables.tf - test
+
 
 Feel free to modify the contents and formatting as needed for your project.
 
