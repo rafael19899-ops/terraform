@@ -1,0 +1,48 @@
+output "blob_storage_account_name" {
+  value = azurerm_storage_account.blob_storage.name
+}
+
+output "blob_storage_account_key" {
+  value = azurerm_storage_account.blob_storage.primary_access_key
+}
+
+output "data_lake_storage_account_name" {
+  value = azurerm_data_lake_storage_account.data_lake_storage.name
+}
+
+output "data_lake_storage_account_key" {
+  value = azurerm_data_lake_storage_account.data_lake_storage.primary_access_key
+}
+
+output "data_warehouse_name" {
+  value = azurerm_synapse_workspace.data_warehouse.name
+}
+
+output "data_warehouse_server_name" {
+  value = azurerm_synapse_workspace.data_warehouse.sql_administrator_login + ".database.windows.net"
+}
+
+output "data_factory_name" {
+  value = azurerm_data_factory.data_factory.name
+}
+
+output "key_vault_name" {
+  value = azurerm_key_vault.key_vault.name
+}
+
+output "private_link_service_name" {
+  value = azurerm_private_link_service.private_link_service.name
+}
+
+output "private_link_service_ip" {
+  value = azurerm_private_link_service.private_link_service.ip_configurations[0].private_ip_address
+}
+
+output "blob_storage_endpoint_name" {
+  value = azurerm_private_endpoint.blob_storage_endpoint.name
+}
+
+output "blob_storage_endpoint_ip" {
+  value = azurerm_private_endpoint.blob_storage_endpoint.ip_address
+}
+
